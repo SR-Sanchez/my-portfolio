@@ -109,7 +109,12 @@ const openLink = () => {
         </iframe>
         <img src="@/assets/icons/chevron-right.svg" @click="show1of2 = false">
       </div>
-      <button @click="showVideo2 = false, show1of2 = true" class="btn">Close</button>
+      <div class="nav-container">
+         <img src="@/assets/icons/chevron-left.svg" @click="show1of2 = true" class="mobile-only">
+         <button @click="showVideo2 = false, show1of2 = true" class="btn">Close</button>
+         <img src="@/assets/icons/chevron-right.svg" @click="show1of2 = false" class="mobile-only">
+      </div>
+
     </div>
   </main>
 </template>
@@ -171,5 +176,36 @@ img {
 .btn:hover {
   background: #1d4ed8;
   cursor: pointer;
+}
+
+@media (min-width: 741px){
+  .nav-container{
+    img{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 740px){
+  .video-container{
+    max-width: 80%;
+    img{
+      display: none;
+    }
+  }
+
+  .nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    img{
+      height: 40px;
+      border-radius: 48px;
+      background-color: white;
+      }
+  }
+
 }
 </style>
