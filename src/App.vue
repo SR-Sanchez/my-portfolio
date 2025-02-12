@@ -8,11 +8,11 @@ import HomeView from './views/HomeView.vue';
   <body>
      <NavBar />
      <main>
-        <HomeView />        
+        <HomeView /> 
     </main>
     <RouterView />
   </body>
- 
+
 </template>
 
 <style scoped>

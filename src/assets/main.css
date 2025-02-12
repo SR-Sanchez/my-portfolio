@@ -1,7 +1,7 @@
 :root {
   --primary: #2563eb;
   --background: #f8fafc;
-  --text: #373B43;
+  --text: #413D35;
   --secondary: #64748b;
 }
 
@@ -102,6 +102,10 @@ h1 {
   margin-bottom: 2rem;
 }
 
+button{
+  all: unset; /* Removes all default styles */
+}
+
 .cta-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -134,7 +138,9 @@ h1 {
 
 .project-card {
   background: var(--background);
+  /* background-color: #2564eb25; */
   border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: transform 0.3s;
 }
@@ -190,6 +196,21 @@ h1 {
 
 .social-link:hover {
   color: var(--primary);
+}
+
+.drop-down{
+  position: fixed;
+  height: 100dvh;
+  width: 100dvw;
+  background-color: rgba(0, 0, 0, 0.288);
+  top: 0;
+  right: 0;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px
 }
 
 @media (max-width: 768px) {
