@@ -92,7 +92,12 @@ const openLink = () => {
         </iframe>
         <img src="@/assets/icons/chevron-right.svg" @click="show1of2 = false">
       </div>
-      <button @click="showVideo1 = false, show1of2 = true" class="btn">Close</button>
+      <div class="nav-container">
+         <img src="@/assets/icons/chevron-left.svg" @click="show1of2 = true">
+         <button @click="showVideo1 = false, show1of2 = true" class="btn">Close</button>
+         <img src="@/assets/icons/chevron-right.svg" @click="show1of2 = false">
+      </div>
+
     </div>
     <div class="drop-down" v-if="showVideo2">
       <p class="video-text">{{ show1of2 ? 'Video 1/2' : 'Video 2/2' }}</p>
@@ -110,9 +115,9 @@ const openLink = () => {
         <img src="@/assets/icons/chevron-right.svg" @click="show1of2 = false">
       </div>
       <div class="nav-container">
-         <img src="@/assets/icons/chevron-left.svg" @click="show1of2 = true" class="mobile-only">
+         <img src="@/assets/icons/chevron-left.svg" @click="show1of2 = true">
          <button @click="showVideo2 = false, show1of2 = true" class="btn">Close</button>
-         <img src="@/assets/icons/chevron-right.svg" @click="show1of2 = false" class="mobile-only">
+         <img src="@/assets/icons/chevron-right.svg" @click="show1of2 = false">
       </div>
 
     </div>
