@@ -5,7 +5,7 @@ const showVideo1 = ref(false);
 const showVideo2 = ref(false);
 const show1of2 = ref(true);
 const openLink = () => {
-  window.open('https://mindguide.netlify.app/', '_blank')
+  window.open('https://mindguide.com.co', '_blank')
 }
 </script>
 
@@ -15,6 +15,22 @@ const openLink = () => {
     <section id="projects">
       <h2 class="section-title">Featured Projects</h2>
       <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="@/assets/images/chat_bot.png" class="image" alt="project image" @click="openLink" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Well-being App (in development)</h3>
+            <div class="project-tags">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Fastify</span>
+              <span class="tag">Gemini API</span>
+            </div>
+            <p>An AI-powered web platform with mobile-first design offering evidence-based tools like thought records, sleep strategies and
+              acceptance exercises in development, for independent or professional use.</p>
+          </div>
+        </article>
         <article class="project-card">
           <div class="project-image">
             <img src="@/assets/images/Vector.png" class="image" alt="project image" @click="showVideo1 = true" />
@@ -48,21 +64,7 @@ const openLink = () => {
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-image">
-            <img src="@/assets/images/chat_bot.png" class="image" alt="project image" @click="openLink" />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Well-being App (personal project)</h3>
-            <div class="project-tags">
-              <span class="tag">React</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">Gemini API</span>
-            </div>
-            <p>An AI-powered web platform offering evidence-based tools like thought records, sleep strategies and
-              acceptance exercises in development, for independent or professional use.</p>
-          </div>
-        </article>
+
       </div>
     </section>
 
