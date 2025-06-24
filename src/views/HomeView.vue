@@ -23,11 +23,12 @@ const openLink = () => {
           <div class="project-content">
             <h3 class="project-title">Well-being App (in development)</h3>
             <div class="project-tags">
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Fastify</span>
-              <span class="tag">Gemini API</span>
+              <span class="tag">Severless</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">AI</span>
+              <span class="tag">Vue.js</span>
             </div>
-            <p>An AI-powered web platform with mobile-first design offering evidence-based tools like thought records, sleep strategies and
+            <p>An AI-powered web platform with mobile-first design (PWA) offering evidence-based tools like thought records, sleep strategies and
               acceptance exercises in development, for independent or professional use.</p>
           </div>
         </article>
@@ -38,8 +39,8 @@ const openLink = () => {
           <div class="project-content">
             <h3 class="project-title">Health Tracker Portal</h3>
             <div class="project-tags">
-              <span class="tag">Vue.js</span>
-              <span class="tag">Pinia</span>
+              <span class="tag">React</span>
+              <span class="tag">PostgreSQL</span>
               <span class="tag">TypeScript</span>
             </div>
             <p>A user-friendly web app designed for tracking health metrics, scheduling and managing medical
